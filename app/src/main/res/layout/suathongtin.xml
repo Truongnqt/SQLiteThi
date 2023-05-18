@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editDongia"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuangduong" />
+
+    <EditText
+        android:id="@+id/editKhuyenmai"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDongia" />
+
+    <TextView
+        android:id="@+id/KhuyenMai"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:text="Khuyến mại(%): "
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/editKhuyenmai"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dongia" />
+
+    <TextView
+        android:id="@+id/Soxe"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:text="Số xe :"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/editSoxe"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Quangduong"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Quãng đường(Km):"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/editQuangduong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Soxe" />
+
+    <TextView
+        android:id="@+id/Dongia"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="Đơn giá(VNĐ): "
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/editDongia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Quangduong" />
+
+    <EditText
+        android:id="@+id/editSoxe"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editQuangduong"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSoxe" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KhuyenMai"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonEdit"
+        app:layout_constraintTop_toBottomOf="@+id/editKhuyenmai"
+        app:layout_constraintVertical_bias="0.248" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
